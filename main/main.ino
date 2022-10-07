@@ -10,24 +10,53 @@ void setup() {
   Serial.begin(9600);
 }
 
-/*
+
 void decodeAnswer(unsigned int a[])
 {
-  int temp = a[0];
-  int answerBits[32];
-  for(int i = 0; temp > 0; i++)
-    {
-      answerBits[i] = temp%2;
-      temp = temp/2;
-    }
+  
+  Serial.print("\nBegin Decode\n");
+  int byte[8] = {0,0,0,0,0,0,0,0};
+  unsigned int byte1, byte2, byte4, byte3 = 0x00;
+  byte1 = a[0];
+  byte2 = a[1];
+  byte3 = a[2];
+  byte4 = a[3];
 
-  for(int i = 0; temp > 0; i++)
+  for(int i = 0; byte1 > 0; i++)
   {
-    Serial.print(answerBits[i]);
+    byte[i] = byte1%2;
+    byte1 = byte1/2;
   }
+  
+  Serial.print("The first byte is: ");
+  for(int i = sizeof(byte)/sizeof(int) - 1; i >= 0; i--)
+    Serial.print(byte[i]);
 
+  for(int i = 0; byte2 > 0; i++)
+  {
+    byte[i] = byte2%2;
+    byte2 = byte2/2;
+  }
+  
+  Serial.print("\nThe second byte is: ");
+  for(int i = sizeof(byte)/sizeof(int) - 1; i >= 0; i--)
+    Serial.print(byte[i]);
+  
+  for(int i = 0; byte4 > 0; i++)
+  {
+    byte[i] = byte4%2;
+    byte4 = byte4/2;
+  }
+ 
+  Serial.print("\nThe time elapsed for the test is: ");
+  Serial.print(byte3);
+  Serial.print(" seconds.\n");
+  Serial.print("The fourth byte is: ");
+  for(int i = sizeof(byte)/sizeof(int) - 1; i >= 0; i--)
+    Serial.print(byte[i]);
+  Serial.print("\nEnd decode\n");
 }
-*/
+
 
 void loop() {
 
@@ -50,15 +79,12 @@ void loop() {
     answers[counter2] = Wire.read();
     counter2++;
   }
+
+  decodeAnswer(answers);
   
-  for(int i = 0; i < sizeof(answers)/sizeof(int); i++)
-  {
-    Serial.print(answers[i]);
-  }
 
   counter2 = 0;
   counter++;
   if (counter == (sizeof(instructions)/sizeof(int)))
     exit(0);
 }
-
