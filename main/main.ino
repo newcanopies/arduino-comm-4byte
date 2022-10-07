@@ -48,7 +48,7 @@ void loop() {
   while(Wire.available())
   {
     answers[counter2] = Wire.read();
-    counter2 = 0;
+    counter2++;
   }
 
 
