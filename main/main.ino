@@ -50,8 +50,13 @@ void loop() {
     answers[counter2] = Wire.read();
     counter2++;
   }
+  
+  for(int i = 0; i < sizeof(answers)/sizeof(int); i++)
+  {
+    Serial.print(answers[i]);
+  }
 
-
+  counter2 = 0;
   counter++;
   if (counter == (sizeof(instructions)/sizeof(int)))
     exit(0);
