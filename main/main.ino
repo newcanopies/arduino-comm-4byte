@@ -33,18 +33,23 @@ void decodeAnswer(unsigned int a[])
   for(int i = sizeof(byte)/sizeof(int) - 1; i >= 0; i--)
     Serial.print(byte[i]);
   Serial.println();
+  for(int i =0; i < 8; i++)
+    byte[i] = 0;
 
+    
   for(int i = 0; byte2 > 0; i++)
   {
     byte[i] = byte2%2;
     byte2 = byte2/2;
   }
-  
+  delay(1000);
   Serial.print("The second byte is: ");
   for(int i = sizeof(byte)/sizeof(int) - 1; i >= 0; i--)
     Serial.print(byte[i]);
   Serial.println();
-  
+  for(int i =0; i < 8; i++)
+    byte[i] = 0;
+  delay(1000);
   for(int i = 0; byte4 > 0; i++)
   {
     byte[i] = byte4%2;
@@ -59,7 +64,7 @@ void decodeAnswer(unsigned int a[])
     Serial.print(byte[i]);
   Serial.println();
   Serial.println("End decode");
-  delay(7000); // delay to allow for buffer to clear for print I believe (L)
+  delay(2000); 
 }
 
 
@@ -71,13 +76,14 @@ void loop() {
   
   unsigned int answers[4] = {0x00, 0x00, 0x00, 0x00};
 
-
   //Write
   Wire.beginTransmission(ADDR); // begin on the transmission on the port with address 0x33 as per the manual and is 51 in decimal.
   Wire.write(instructions[counter]);
+  //Wire.write(0x00);
   Wire.endTransmission(); //stop the transmission
   //Read
   Wire.requestFrom(ADDR, 4); //requestest from the slave port (the antenna at address 0x33) and pass 4 bytes
+  delay(30000); // delay to allow for buffer to clear for print I believe (L)
   
   while(Wire.available())
   {
@@ -92,13 +98,13 @@ void loop() {
   counter++;
   Serial.println(counter);
   
-  if (counter == (sizeof(instructions)/sizeof(int)))
+  if (counter == 10)
   {
-    for(int i = 0; i < sizeof(answers)/sizeof(int) ; i++)
-    {
-      Serial.print(answers[i]);
-      Serial.print(" ");
-    }
+    //for(int i = 0; i < sizeof(answers)/sizeof(int) ; i++)
+    //{
+      //Serial.print(answers[i]);
+      //Serial.print(" ");
+    //}
     Serial.print("Program Finished");
     exit(0);
   }
