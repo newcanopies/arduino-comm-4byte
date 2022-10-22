@@ -78,8 +78,9 @@ void loop() {
 
   //Write
   Wire.beginTransmission(ADDR); // begin on the transmission on the port with address 0x33 as per the manual and is 51 in decimal.
+  Serial.println(instructions[counter]);
   Wire.write(instructions[counter]);
-  //Wire.write(0x00);
+  Wire.write(0x00);
   Wire.endTransmission(); //stop the transmission
   //Read
   Wire.requestFrom(ADDR, 4); //requestest from the slave port (the antenna at address 0x33) and pass 4 bytes
@@ -106,6 +107,7 @@ void loop() {
       //Serial.print(" ");
     //}
     Serial.print("Program Finished");
+    delay(1000);
     exit(0);
   }
     
