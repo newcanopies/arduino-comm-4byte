@@ -1,0 +1,191 @@
+Test Block 1: Instruction 0x1f //with counter at 2 to catch intial and input
+15:22:03.188 -> 0
+15:22:03.188 -> 68
+15:22:03.188 -> 0
+15:22:03.188 -> 0
+15:22:03.236 -> 180
+15:22:03.236 -> 
+15:22:03.236 -> Begin Decode
+15:22:03.236 -> The first byte is:01000100
+15:22:03.283 -> The second byte is: 00000000
+15:22:03.283 -> The time elapsed for the test is: 0 seconds.
+15:22:03.330 -> The fourth byte is: 10110100
+15:22:03.377 -> End decode
+15:22:03.377 -> 1
+15:22:25.358 -> 0
+15:22:25.358 -> 117
+15:22:25.358 -> 136
+15:22:25.358 -> 5
+15:22:25.358 -> 191
+15:22:25.358 -> 
+15:22:25.358 -> Begin Decode
+15:22:25.358 -> The first byte is:01110101
+15:22:25.406 -> The second byte is: 10001000
+15:22:25.453 -> The time elapsed for the test is: 5 seconds.
+15:22:25.500 -> The fourth byte is: 10111111
+15:22:25.500 -> End decode
+15:22:25.548 -> 2
+15:22:51.475 -> Program Finished
+
+Test Block 2: Instruction 0x22
+0
+15:36:04.073 -> 68
+15:36:04.073 -> 0
+15:36:04.073 -> 0
+15:36:04.073 -> 180
+15:36:04.073 -> 
+15:36:04.073 -> Begin Decode
+15:36:04.073 -> The first byte is:01000100
+15:36:04.121 -> The second byte is: 00000000
+15:36:04.169 -> The time elapsed for the test is: 0 seconds.
+15:36:04.216 -> The fourth byte is: 10110100
+15:36:04.216 -> End decode
+15:36:04.263 -> 1
+15:36:05.164 -> 0
+15:36:05.164 -> 70
+15:36:05.212 -> 34
+15:36:05.212 -> 29
+15:36:05.212 -> 180
+15:36:05.212 -> 
+15:36:05.212 -> Begin Decode
+15:36:05.212 -> The first byte is:01000110
+15:36:05.260 -> The second byte is: 00100010
+15:36:05.260 -> The time elapsed for the test is: 29 seconds.
+15:36:05.307 -> The fourth byte is: 10110100
+15:36:05.355 -> End decode
+15:36:05.355 -> 2
+15:36:06.302 -> 0
+15:36:06.302 -> 70
+15:36:06.302 -> 34
+15:36:06.302 -> 29
+15:36:06.350 -> 180
+15:36:06.350 -> 
+15:36:06.350 -> Begin Decode
+15:36:06.350 -> The first byte is:01000110
+15:36:06.397 -> The second byte is: 00100010
+15:36:06.397 -> The time elapsed for the test is: 29 seconds.
+15:36:06.445 -> The fourth byte is: 10110100
+15:36:06.493 -> End decode
+15:36:06.493 -> 3
+15:36:07.441 -> 0
+15:36:07.441 -> 70
+15:36:07.441 -> 34
+15:36:07.441 -> 29
+15:36:07.441 -> 180
+15:36:07.441 -> 
+15:36:07.441 -> Begin Decode
+15:36:07.488 -> The first byte is:01000110
+15:36:07.488 -> The second byte is: 00100010
+15:36:07.537 -> The time elapsed for the test is: 29 seconds.
+15:36:07.584 -> The fourth byte is: 10110100
+15:36:07.632 -> End decode
+15:36:07.632 -> 4
+15:36:08.578 -> 0
+15:36:08.578 -> 70
+15:36:08.578 -> 34
+15:36:08.578 -> 29
+15:36:08.578 -> 180
+15:36:08.578 -> 
+15:36:08.578 -> Begin Decode
+15:36:08.578 -> The first byte is:01000110
+15:36:08.625 -> The second byte is: 00100010
+15:36:08.672 -> The time elapsed for the test is: 29 seconds.
+15:36:08.720 -> The fourth byte is: 10110100
+15:36:08.768 -> End decode
+15:36:08.768 -> 5
+15:36:09.672 -> 0
+15:36:09.672 -> 70
+15:36:09.720 -> 34
+15:36:09.720 -> 28
+15:36:09.720 -> 180
+15:36:09.720 -> 
+15:36:09.720 -> Begin Decode
+15:36:09.720 -> The first byte is:01000110
+15:36:09.768 -> The second byte is: 00100010
+15:36:09.768 -> The time elapsed for the test is: 28 seconds.
+15:36:09.816 -> The fourth byte is: 10110100
+15:36:09.864 -> End decode
+15:36:09.864 -> 6
+15:36:10.814 -> 0
+15:36:10.814 -> 70
+15:36:10.814 -> 34
+15:36:10.814 -> 29
+15:36:10.814 -> 180
+15:36:10.862 -> 
+15:36:10.862 -> Begin Decode
+15:36:10.862 -> The first byte is:01000110
+15:36:10.909 -> The second byte is: 00100010
+15:36:10.909 -> The time elapsed for the test is: 29 seconds.
+15:36:10.956 -> The fourth byte is: 10110100
+15:36:11.003 -> End decode
+15:36:11.003 -> 7
+15:36:11.952 -> 0
+15:36:11.952 -> 70
+15:36:11.952 -> 34
+15:36:11.952 -> 29
+15:36:11.952 -> 180
+15:36:11.952 -> 
+15:36:11.952 -> Begin Decode
+15:36:11.999 -> The first byte is:01000110
+15:36:11.999 -> The second byte is: 00100010
+15:36:12.046 -> The time elapsed for the test is: 29 seconds.
+15:36:12.093 -> The fourth byte is: 10110100
+15:36:12.141 -> End decode
+15:36:12.141 -> 8
+15:36:13.088 -> 0
+15:36:13.088 -> 70
+15:36:13.088 -> 34
+15:36:13.088 -> 29
+15:36:13.088 -> 180
+15:36:13.088 -> 
+15:36:13.088 -> Begin Decode
+15:36:13.136 -> The first byte is:01000110
+15:36:13.136 -> The second byte is: 00100010
+15:36:13.183 -> The time elapsed for the test is: 29 seconds.
+15:36:13.231 -> The fourth byte is: 10110100
+15:36:13.231 -> End decode
+15:36:13.279 -> 9
+15:36:14.181 -> 0
+15:36:14.181 -> 70
+15:36:14.228 -> 34
+15:36:14.228 -> 29
+15:36:14.228 -> 180
+15:36:14.228 -> 
+15:36:14.228 -> Begin Decode
+15:36:14.228 -> The first byte is:01000110
+15:36:14.275 -> The second byte is: 00100010
+15:36:14.323 -> The time elapsed for the test is: 29 seconds.
+15:36:14.371 -> The fourth byte is: 10110100
+15:36:14.371 -> End decode
+15:36:14.371 -> 10
+15:36:19.350 -> Program Finished
+
+Test 3: Instructions 0x2E // note back to 2 on counter interval. Timing is too fast sometimes. Note the maximum time to run algorithm as next read/write delay at end 
+15:50:14.049 -> 0
+15:50:14.049 -> 70
+15:50:14.049 -> 34
+15:50:14.049 -> 15
+15:50:14.049 -> 180
+15:50:14.049 -> 
+15:50:14.049 -> Begin Decode
+15:50:14.049 -> The first byte is:01000110
+15:50:14.097 -> The second byte is: 00100010
+15:50:14.143 -> The time elapsed for the test is: 15 seconds.
+15:50:14.191 -> The fourth byte is: 10110100
+15:50:14.191 -> End decode
+15:50:14.240 -> 1
+15:50:45.195 -> 0
+15:50:45.195 -> 102
+15:50:45.195 -> 68
+15:50:45.195 -> 23
+15:50:45.195 -> 188
+15:50:45.195 -> 
+15:50:45.195 -> Begin Decode
+15:50:45.243 -> The first byte is:01100110
+15:50:45.243 -> The second byte is: 01000100
+15:50:45.290 -> The time elapsed for the test is: 23 seconds.
+15:50:45.338 -> The fourth byte is: 10111100
+15:50:45.385 -> End decode
+15:50:45.385 -> 2
+
+

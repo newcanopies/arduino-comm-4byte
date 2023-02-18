@@ -1,0 +1,16 @@
+Test 4: Instruction 0x2D //  30 SEC delay
+16:00:3 Begin Decode
+16:00:38.393 -> The first byte is:01010110
+16:00:38.393 -> The second byte is: 00010001
+16:00:38.441 -> The time elapsed for the test is: 16 seconds.
+16:00:38.488 -> The fourth byte is: 10110111
+16:00:38.535 -> End decode
+16:00:38Begin Decode
+16:01:09.550 -> The first byte is:01010110
+16:01:09.550 -> The second byte is: 01000100
+16:01:09.598 -> The time elapsed for the test is: 18 seconds.
+16:01:09.646 -> The fourth byte is: 10110111
+16:01:09.693 -> End decode
+16:01:09.693 -> 2
+
+Test 5: Instructions 0x1D //10 second delay. Longest wait for all antennas, make sure to check and change based on Algorithm, so not to time out and give 00 on 2 RMB for byte 1
